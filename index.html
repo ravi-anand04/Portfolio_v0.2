@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Include GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
+
+    <!-- Include ScrollTrigger plugin -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/ScrollTrigger.min.js"
+    ></script>
+
+    <!-- <script src="./locomotive-scroll.min.js"></script> -->
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div class="cursor"></div>
+
+    <div id="main" data-locomotive-scroll>
+      <header>
+        <nav>
+          <img src="./assets/Ravi (1).gif" alt="nav logo" />
+
+          <div class="menuitem">
+            <a style="font-size: 1.2rem" href="#">Home</a>
+            <a style="font-size: 1.2rem" href="#">About</a>
+            <a style="font-size: 1.2rem" href="#">Resume</a>
+            <a style="font-size: 1.2rem" href="#">Projects</a>
+            <a style="font-size: 1.2rem" href="#">Contact</a>
+          </div>
+          <!-- <div class="circle toggleDark"></div> -->
+        </nav>
+      </header>
+
+      <main class="container">
+        <section class="section_1">
+          <div class="section_detail py-8">
+            <div>
+              <h1 class="d3" style="color: white; line-height: 2">
+                Hey I'm, Ravi Anand
+              </h1>
+              <h1 class="d3" style="color: black">Frontend developer</h1>
+            </div>
+            <h3
+              style="
+                font-family: Poppins;
+                color: rgb(0, 17, 255);
+                letter-spacing: 0px;
+              "
+            >
+              With a knack for blending creativity and code
+            </h3>
+          </div>
+        </section>
+
+        <section class="section_2 py-8">
+          <h1>About Me</h1>
+          <div class="section_detail pt-5">
+            <h3 class="section_2--left">
+              <img style="display: block" src="./assets/Profile_pic.jpg" />
+            </h3>
+            <div class="section_2--right">
+              <h4 style="color: black; letter-spacing: 1px; line-height: 1.25">
+                Hey there 👋, I am a passionate web developer who thrives on
+                turning ideas into visually stunning and functional websites. I
+                have a deep appreciation for the art of design and a strong
+                command of HTML, CSS, and JavaScript. I am eagerly look forward
+                to taking on new challenges in the ever-evolving landscape of
+                development.
+              </h4>
+            </div>
+          </div>
+        </section>
+        <section class="section_2 py-8">
+          <h1>Experience</h1>
+          <div class="section_detail pt-5">
+            <h3 class="section_2--left">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+              aut.
+            </h3>
+            <div class="section_2--right">
+              <p>
+                We weave together bold strategy and creative execution to
+                produce thought-provoking digital experiences. We take a higNy
+                personalized approach to delivering branding, web design, and
+                content marketing solutions. Born in the DC area - raw serving
+                clients voridvhde.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="education section_2 py-8">
+          <h1>SKILLS</h1>
+          <div class="section_detail pt-5">
+            <h3 class="section_2--left">
+              A CREATIVE COLLECTIVE MAde TO UNLOCK YOUR BRAND'S POTENTIAl
+            </h3>
+            <div class="section_2--right">
+              <p>
+                We weave together bold strategy and creative execution to
+                produce thought-provoking digital experiences. We take a higNy
+                personalized approach to delivering branding, web design, and
+                content marketing solutions. Born in the DC area - raw serving
+                clients voridvhde.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="section_2 py-8">
+          <!-- Project Box Model  -->
+          <h1 style="margin-bottom: 1rem">Projects</h1>
+          <div id="project-container">
+            <div class="container">
+              <div class="wrapper">
+                <ul class="stage clearfix">
+                  <li class="scene">
+                    <div class="movie" onclick="return true">
+                      <div class="poster"></div>
+                      <div class="info">
+                        <header>
+                          <h1>Chess App</h1>
+                          <span>Skills: HTML, CSS, JS</span>
+                        </header>
+                        <div class="description">
+                          <div class="desc">
+                            A web-based chess platform, which offers a
+                            feature-rich and intuitive interface for players.
+                            <br /><br /><br />
+                          </div>
+                          <div class="links">
+                            <a
+                              class="teaser-link"
+                              href="https://goo.gl/i4KTns"
+                              target="_blank"
+                              >Project</a
+                            >
+                            <a
+                              class="teaser-link"
+                              href="https://goo.gl/i4KTns"
+                              target="_blank"
+                              >Live</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-name">Chess game</div>
+                  </li>
+                  <li class="scene">
+                    <div class="movie" onclick="return true">
+                      <div class="poster"></div>
+                      <div class="info">
+                        <header>
+                          <h1>Stock Market Dashboard</h1>
+                          <span>Skills: HTML, CSS, JS</span>
+                        </header>
+                        <div class="description">
+                          <div class="desc">
+                            <ul style="list-style: none">
+                              <li>
+                                This is a user-friendly financial tool designed
+                                to provide users with essential stock market
+                                insights at their fingertips.
+                              </li>
+                              <li>
+                                Recently visited stocks, automatically get added
+                                to watchlist.
+                              </li>
+                            </ul>
+                            <br />
+                          </div>
+                          <div class="links">
+                            <a
+                              class="teaser-link"
+                              href="https://goo.gl/i4KTns"
+                              target="_blank"
+                              >Project</a
+                            >
+                            <a
+                              class="teaser-link"
+                              href="https://goo.gl/i4KTns"
+                              target="_blank"
+                              >Live</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-name">Stock Market Dashboard</div>
+                  </li>
+
+                  <li class="scene">
+                    <div class="movie" onclick="return true">
+                      <div class="poster"></div>
+                      <div class="info">
+                        <header>
+                          <h1>Hotel Landing Page</h1>
+                          <span>Skills: HTML, CSS</span>
+                        </header>
+                        <div class="description">
+                          <div class="desc">
+                            <ul style="list-style: none">
+                              <li>
+                                The Hotel Landing Page is a static web page
+                                designed to mimic the visual aesthetics of
+                                Airbnb's landing page.
+                              </li>
+                              <li>
+                                It showcases the usage of HTML and CSS to create
+                                a visually appealing and responsive user
+                                interface.
+                              </li>
+                            </ul>
+                            <br />
+                          </div>
+                          <div class="links">
+                            <a
+                              class="teaser-link"
+                              href="https://goo.gl/i4KTns"
+                              target="_blank"
+                              >Project</a
+                            >
+                            <a
+                              class="teaser-link"
+                              href="https://goo.gl/i4KTns"
+                              target="_blank"
+                              >Live</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-name">Hotel Landing Page</div>
+                  </li>
+                  <li class="scene">
+                    <div class="movie" onclick="return true">
+                      <div class="poster"></div>
+                      <div class="info">
+                        <header>
+                          <h1>Tic Tac Toe game</h1>
+                          <span>Skills: HTML, CSS, JS</span>
+                        </header>
+                        <div class="description">
+                          <div class="desc">
+                            <ul style="list-style: none">
+                              <li>
+                                The Hotel Landing Page is a static web page
+                                designed to mimic the visual aesthetics of
+                                Airbnb's landing page.
+                              </li>
+                              <li>
+                                It showcases the usage of HTML and CSS to create
+                                a visually appealing and responsive user
+                                interface.
+                              </li>
+                            </ul>
+                            <br />
+                          </div>
+                          <div class="links">
+                            <a
+                              class="teaser-link"
+                              href="https://goo.gl/i4KTns"
+                              target="_blank"
+                              >Project</a
+                            >
+                            <a
+                              class="teaser-link"
+                              href="https://goo.gl/i4KTns"
+                              target="_blank"
+                              >Live</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-name">Tic Tac Toe game</div>
+                  </li>
+                </ul>
+              </div>
+              <!-- /wrapper -->
+            </div>
+            <!-- /container -->
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <section class="container">
+          <div class="footer--top">
+            <h1 style="margin-bottom: 1rem">Contact Me</h1>
+            <button class="btn-circle">Get in Touch</button>
+          </div>
+          <div class="line"></div>
+          <div class="footer--bottom py-2">
+            <p
+              class="copy_tag"
+              style="font-family: Impact, sans-serif; font-size: 1.3rem"
+            >
+              Made with <span style="font-weight: 900; color: red">❤</span> by
+              Ravi Anand
+            </p>
+          </div>
+        </section>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  </body>
+</html>
